@@ -6,20 +6,7 @@
 <div align="center">
   <img src="model.png" alt="Model Architecture">
 </div>
-Advancements in spatial transcriptomics (ST) technology have enabled the analysis of gene expression while preserving
-cellular spatial information, greatly enhancing our understanding of cellular interactions within tissues. Accurate
-identification of spatial domains is crucial for comprehending tissue organization. However, effectively integrating multi-
-dimensional information poses significant challenges. To address these challenges, we propose a novel self-supervised
-graph representation learning framework named stHGC for identifying spatial domains. Firstly, a hybrid neighbor graph
-is constructed by integrating information from different similarity metrics to represent spatial proximity and high-
-dimensional gene expression feature similarity. Secondly, a self-supervised graph representation learning framework is
-introduced to learn the representation of spots in ST data. Within this framework, the graph attention mechanism
-is utilized to characterize relationships between adjacent spots, while the self-supervised method ensures distinct
-representations for non-neighboring spots. Lastly, a spatial regularization constraint is employed to enable the model to
-retain the structural information of spatial neighbors. Experimental results demonstrate that stHGC outperforms state-
-of-the-art methods in identifying spatial domains across ST datasets with different resolutions and species. Furthermore,
-stHGC proves beneficial for downstream tasks such as denoising and trajectory inference, showcasing its scalability in
-handling ST data.
+TCCL is an innovative contrastive learning framework with a twin cross-scale approach, designed to integrate multi-modal features for predicting drug-target binding affinity. A dual-stream encoder processes multi-modal data, extracting semantic and structural features of drugs and proteins at the molecular level, while balancing and synthesizing information from diverse sources to enhance feature representation. A network information aggregator extracts topological data from the drug-target bipartite graph, capturing interaction patterns at the network scale. Additionally, a twin cross-scale contrastive learning method, leveraging Semantic-Network Contrastive Learning (SENCL) and Structure-Network Contrastive Learning (STNCL), integrates multi-scale and multi-modal information. This approach enables efficient data fusion through molecular interaction understanding, improving the representation of drug and protein features and enhancing DTA prediction accuracy.
 
 
 ## Environments
