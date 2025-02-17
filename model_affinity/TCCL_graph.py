@@ -4,7 +4,7 @@ from torch_geometric.utils import dropout_adj
 from torch_geometric.nn import GCNConv, SAGEConv, global_mean_pool as gep
 
 
-class Graph_drug(nn.Module):  # Top-Down strategy
+class Graph_drug(nn.Module):
     def __init__(self, n_output=1, output_dim=128, num_features_xd=78, num_features_xc=92, num_features_pro=33,
                  num_features_ppi=1442):
         super(Graph_drug, self).__init__()
@@ -54,7 +54,7 @@ class Graph_drug(nn.Module):  # Top-Down strategy
         return xcat
 
 
-class Graph_protein(nn.Module):  # Top-Down strategy
+class Graph_protein(nn.Module): 
     def __init__(self, n_output=1, output_dim=128, num_features_pro=54):
         super(Graph_protein, self).__init__()
         self.output_dim = output_dim
