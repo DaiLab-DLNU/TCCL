@@ -1,5 +1,4 @@
 # TCCL
-# Twin Cross-scale Contrastive Learning with Multi-modality Fusion for Drug-Target Affinity Prediction
 
 ## Overview
 
