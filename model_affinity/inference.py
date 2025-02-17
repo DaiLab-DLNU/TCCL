@@ -165,12 +165,6 @@ def train_predict():
             best_epoch = epoch + 1
             best_mse = ret[0]
             best_ci = ret[1]
-            # if epoch > 1000:
-            #     model_file_name = f"results_sage/results_sage1/{args.dataset}/best_model{str(epoch)}.model"
-            #     model_file_name2 = f"results_sage/results_sage1/{args.dataset}/pre_model{str(epoch)}.model"
-            #     torch.save(model.state_dict(), model_file_name)
-            #     torch.save(predictor.state_dict(), model_file_name2)
-            # else:
             torch.save(model.state_dict(), model_file_name)
             torch.save(predictor.state_dict(), model_file_name2)
             print('rmse improved at epoch ', best_epoch, '; best_mse,best_ci:', best_mse, best_ci, args.dataset)
